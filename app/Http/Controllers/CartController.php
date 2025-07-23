@@ -28,7 +28,7 @@ class CartController extends Controller
                 "quantity" => 1,
                 "prix" => $produit->prix,
                 "image_url" => $produit->image_url,
-                "stand_id" => $produit->stand_id // Important pour la commande finale
+                "stand_id" => $produit->stand_id // On stocke aussi l'ID du stand pour pouvoir grouper les commandes plus tard
             ];
         }
 
